@@ -1,0 +1,361 @@
+﻿form{
+    font-family:'Times New Roman', Times, serif;
+}
+.imagenlogout {
+    width: 25px;
+    border-radius: 0;
+    float: left;
+
+}
+
+.logout {
+    font-size: .8em;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    right: -20px;
+    bottom: -4px;
+    overflow: hidden;
+    letter-spacing: 3px;
+    opacity: 0;
+    transition: opacity .45s;
+    -webkit-transition: opacity .35s;
+}
+
+.button {
+    text-decoration: none;
+    float: right;
+    padding-right: 12px;
+    padding-top: 0%;
+    margin: 15px;
+    color: #f6f4e6;
+    width: 25px;
+    transition: width .35s;
+    -webkit-transition: width .35s;
+    overflow: hidden
+}
+
+a:hover {
+    width: 120px;
+    color: #f6f4e6;
+}
+
+    a:hover .logout {
+        opacity: .9;
+    }
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #5f6387; 
+    color: #f6f4e6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    color: #f6f4e6;
+}
+
+.row {
+    padding-top: 0;
+}
+
+.campos {
+    margin: 20px 0;
+}
+
+p {
+    margin: 10px 0;
+    color: #f6f4e6; 
+}
+
+.headerView1 {
+    padding-top: 5%;
+}
+
+.headerGeneral {
+    padding-top: 3%;
+}
+
+.mi-clase-especial {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 2%;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .mi-clase-especial img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #f6f4e6;
+    font-family: Arial;
+    text-align:center;
+}
+textarea {
+    width: 100%;
+    padding: 0;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #f6f4e6;
+    font-family: Arial;
+}
+
+button {
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #f6f4e6;
+}
+
+#MultiView1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    #MultiView1 div {
+        margin-bottom: 15px;
+    }
+
+.añadirImagen {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+
+
+.navMenu {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+    .navMenu a {
+        color: #f6f4e6;
+        text-decoration: none;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: inline-block;
+        width: 80px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        font-size: 200%;
+    }
+
+        .navMenu a:hover {
+            color: #fddb3a;
+            font-size: 150%;
+        }
+
+    .navMenu .dot {
+        width: 6px;
+        height: 6px;
+        background: #fddb3a;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-transform: translateX(30px);
+        transform: translateX(0px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navMenu a:nth-child(1):hover ~ .dot {
+        -webkit-transform: translateX(30px);
+        transform: translateX(39px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .navMenu a:nth-child(2):hover ~ .dot {
+        -webkit-transform: translateX(110px);
+        transform: translateX(120px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+        
+    }
+
+    .navMenu a:nth-child(3):hover ~ .dot {
+        -webkit-transform: translateX(200px);
+        transform: translateX(204px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+person-add-outline {
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .0);
+    padding-left: calc(var(--bs-gutter-x) * .0);
+    margin-top: var(--bs-gutter-y);
+}
+
+
+
+
+.calendar-container {
+    font-family: 'Cursiva', cursive;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 90%;
+    text-align: center; 
+}
+
+
+
+
+tbody, td, tfoot, th, thead, tr {
+    border-collapse: collapse;
+    border-color: black;
+    border-width: 1px;
+    color: black;
+    text-align: center;
+}
+
+
+.calendar-header {
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+
+.calendar-day {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f6f4e6;
+    border-color: black;
+}
+
+   
+    .calendar-day.other-month {
+        background-color: #3d3f60;
+    }
+
+    
+     .calendar-daySelected {
+        background-color: #fddb3a;
+        color: #fff;
+    }
+
+
+.calendar-day.today {
+    background-color: #c5cfd6;
+    color: #fff;
+}
+
+
+    .calendar-day.disabled {
+        color: #ccc;
+        pointer-events: none;
+    }
+
+
+
+.calendar-footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #2c3e50;
+    color: #fff;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid black; 
+}
+
+
+
+.container {
+    background-color:;
+    padding: 20px;
+}
+
+
+.buttonFU {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .buttonFU:hover {
+        background-color: #ddd;
+    }
+
+
+.botones {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+    .botones:hover {
+        background-color: #ddd;
+    }
+
+.alinearBtn{
+    text-align:center;
+}
+
+.error-textbox {
+    border: 1px solid #FF0000;
+}

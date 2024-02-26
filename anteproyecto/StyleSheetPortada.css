@@ -1,0 +1,76 @@
+﻿body {
+            background-image: url(./fondoBueno.jpg);
+            background-size: cover;
+            background-position: center center; 
+            height: 100vh;
+            margin: 0;
+        }
+
+        .fondo {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .logo {
+            text-align: center;
+            width: 25%;
+            -webkit-transition: all .5s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.25);
+        }
+
+        .my_div {
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+            background-color: transparent;
+            transition: all 500ms ease-in-out;
+            padding-left: 3%;
+        }
+
+        .my_div:hover {
+            background-color: transparent;
+        }
+
+        h1 {
+            overflow: hidden;
+        }
+
+        .old-text,
+        .new-text {
+            display: block;
+            overflow: hidden;
+            transition: all 500ms ease-in-out;
+        }
+
+        .old-text {
+            color: #e0dcd9;
+            height: auto;
+            opacity: 1;
+            width: auto;
+        }
+
+        .new-text {
+            color: #e0dcd9;
+            height: 0;
+            opacity: 0;
+            width: 0;
+        }
+
+        .my_div:hover .old-text {
+            height: 0px;
+            opacity: 0;
+            width: 0px;
+        }
+
+        .my_div:hover .new-text {
+            height: auto;
+            opacity: 1;
+            width: auto;
+        }
